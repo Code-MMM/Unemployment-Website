@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unemployment</title>
+    <link rel = "stylesheet" href="styles.css">
+</head>
+<body id = "body">
+    <div class = "headingBar">
+        <h1>Unemployment</h1>
+        <h2>Are you aware?</h2>
+    </div>
+
+    <div class = "brief">
+        <h3>Unemployment is an issue which is holding society back.</h3>
+    </div>
+
+    <div class="buttoncontainer">
+        <div class="vertical-center">
+          <button class = "learnMore" onclick="onLearnMorePress()">Learn more</button>
+        </div>
+    </div>
+
+    <div class = "reveal">
+        <div id = "How?" class = "How">
+            <h2>How is Unemployment a threat?</h2>
+            <h3>
+                The main impact of unemployment is the overall loss in GDP or the money that flows around. All the people that could be working are not, and such is the loss.
+                It also means that less money is going to the government because unemployed people do not earn nor pay tax, tax is already a concern among citizens and unemployment just makes it worse.
+                The government also has to pay out benefits for the unemployed, further decreasing the sums of money that go towards development.
+            </h3>
+        </div>
+
+        <div id = "Statistics" class = "Statistics">
+            <h2>What are some statistics?</h2>
+            <h3>
+                India is a country which has one of the highest unemployment rates of 8.8% from 2018 to 2020, hitting an all-time peak of 23.50% in April 2020 and a historic low of 6.70% in November 2018. With numbers like those, you cant deny the issue.
+            </h3>
+        </div>
+
+        <div id = "Solutions" class="Solutions">
+            <h2>Are there any solutions?</h2>
+            <h3>
+                Well, obviously the solution is creating more jobs, but how exactly do we accomplish that?
+                The only people who can create more jobs are investors, and officials in companies, if you are an adult you might want to look into investing in promising companies, as most of that money goes towards hiring staff.
+                As for officials in companies, spreading awareness and demanding an increase in staff is the most you can do, and it might create some new jobs!
+            </h3>
+        </div>
+    </div>
+
+    <script>
+        function changeBackground() {
+            document.getElementById("body").style.backgroundImage = "url(https://images.indianexpress.com/2020/06/jobs.jpg)"
+        }
+
+        function toggleVisible(obj) {
+            var x = document.getElementById(obj);
+            x.style.display = "block"; 
+        }
+
+        async function onLearnMorePress() {
+            changeBackground()
+            toggleVisible("How?")
+            var delay1 = await delay(2000)
+            toggleVisible("Statistics")
+            var delay2 = await delay(2000)
+            toggleVisible("Solutions")
+        }
+
+        function delay(delayInms) {
+            return new Promise(resolve => {
+                setTimeout(() => {
+                resolve(2);
+                }, delayInms);
+            });
+        }  
+    </script>
+</body>
+</html>
