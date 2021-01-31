@@ -21,7 +21,7 @@ body {
     margin-right: 110px;
     margin-left: 20px;
     width: 25%;
-    height: 400px;
+    height: 600px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     background-color: rgba(155, 9, 240, 0.15);
@@ -34,7 +34,7 @@ body {
     margin-right: 110px;
     margin-left: 110px;
     width: 25%;
-    height: 400px;
+    height: 600px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     background-color: rgba(155, 9, 240, 0.15);
@@ -47,7 +47,7 @@ body {
     margin-right: 20px;
     margin-left: 110px;
     width: 25%;
-    height: 400px;
+    height: 600px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     border-radius: 5px;
     background-color: rgba(155, 9, 240, 0.15);
